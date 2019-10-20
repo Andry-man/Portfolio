@@ -291,3 +291,17 @@ font-family: "Big Shoulders Text", cursive;
         font-weight: bold;
         text-decoration: none;
     }
+    .slider-container {
+    width: 59.3%;
+    margin-left: 20%;
+    height: auto;
+    }
+  .slider_main_button {
+    width: 18%;
+    margin-left: 2%;
+    height: 14%;
+    margin-top: 34%;
+    position: absolute;
+    z-index: 5;
+    }
+   
