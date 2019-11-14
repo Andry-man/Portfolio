@@ -47,6 +47,7 @@ box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
 } }
 .myh1 {
     margin-top: -57px;
+    opacity: 0;
  }
 .header-photo {
 position: absolute;
@@ -452,9 +453,16 @@ position: absolute;
 font-size: 25px;
 left: 78%;
 margin-top: 12px;
-/* transform: rotate(90deg); */
 color: #cdd4d1;
 }
+@media (max-width: 375px) {
+    .socialbutton_element {
+        position: absolute;
+        font-size: 25px;
+        left: 83%;
+        margin-top: 22px;
+        color: #cdd4d1;
+        } }
 .education {
 position: absolute;
 left: 43%;
@@ -806,6 +814,24 @@ background-color: rgb(58, 88, 143);
     color: #fff;
     text-align: center;
     font-size: 2.3vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Righteous';
+    text-shadow: 2px 2px 3px #000000;
+}
+.about {
+    color: #f3f3f3;
+    text-align: initial;
+    font-size: 2.1vw;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px #000000;
+}
+.skills li  {
+    position: relative;
+    color: #fff;
+    text-align: left;
+    margin-left: 2%;
+    font-size: 1.9vw;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Righteous';
