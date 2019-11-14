@@ -14,34 +14,58 @@
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="script.js"></script>
+    <link rel="shortcut icon" href="./src/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <div class="wrapper">
         <header class="header">
             <nav class="header-info_list">
+                <h1 class="myh1">Portfolio</h1>
                 <span class="my_name">Andrei Chapiuk</span>
-                <a href="https://github.com/Andry-man" target="_blank" class="my_github">Github</a>
-                <a href="https://telegram.me/kod321" target="_blank" class="my_contact">Telegram</a>
+                <a href="https://github.com/Andry-man" target="_blank" title="open in a new window" class="my_github">Github</a>
+                <a href="https://telegram.me/kod321" target="_blank" title="open in a new window" class="my_contact">Telegram</a>
             </nav>
             <div class="header-photo">
                 <img class="photo" src="./src/img/7QR3m7S.png" alt="my_face">
             </div>
         </header>
+                <nav class="nav-collapse">
+                  <ul>
+                    <li class="menu-item active"><a href="#home" data-scroll>Home</a></li>
+                    <li class="menu-item"><a href="#about" data-scroll>My projects</a></li>
+                    <li class="menu-item"><a href="#projects" data-scroll>About me</a></li>
+                  </ul>
+                </nav>
         <main>
-            <div class="expansion_panel">
-                <div class="droplink">
-                    <div class="socialbutton" onclick="down()"><span class="education">Education</span></div>
-                    <ul id="dropdown" style="display:none">
+                <section id="home">
+                    <div class="socialbutton"  id="butt" ><span class="education">Education</span><span class="socialbutton_element" id="element" style="transform: rotate(0deg)" >>></span></div>
+                    <div class="education_myinfo" id="education_myinfo" >
+                            <div class="expansion_panel" id="list-info" style="opacity: 0" >
+                    <ul class="ed_list">
                         <li class="shool">Shool:2002-2011</li>
                         <li class="college">College:2011-2015</li>
                         <li class="RSShool_Courses">RSShool Courses:2019-2020</li>
                     </ul>
                 </div>
-            </div>
+                </div>
+                <ul class="skil_list">
+                   <h2>My profiles:</h2>
+                        <li>github:<a target="_blank" title="open in a new window" href="https://github.com/Andry-man">Andry-man</a> </li>
+                        <li>hexlet:<a target="_blank" title="open in a new window" href="https://ru.hexlet.io/u/andry-man">Andry che</a></li>
+                        <li>codewars:<a target="_blank" title="open in a new window" href="https://www.codewars.com/users/Andrew%20Man">Andrew Man</a></li>
+                        <li>htmlacademy:<a target="_blank" title="open in a new window" href="https://htmlacademy.ru/profile/id1193861">Грыша Булюкин</a></li>
+                    </ul>
+                   
+                        <a class="up_button" href="#home" data-scroll>up</a>
+
+            </section>
+
+
+            <section id="about">
+            <span class="my_project">My project</span>
+            <span class="my_project_one">(tap on image to see project)</span>
             <div class="slider_block">
-                <span class="slider_text">Projects</span>
                 <div class="slider-container">
                     <div id="mySlider" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
@@ -107,27 +131,16 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="projects">
+                <h3 class="about_me">About me:</h3>
+              </section>
+
         </main>
     </div>
-    <script>
-        var mySwiper = new Swiper('.swiper-container', {
-            direction: 'horizontal',
-            loop: true,
-
-            pagination: {
-                el: '.swiper-pagination',
-            },
-
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            scrollbar: {
-                el: '.swiper-scrollbar',
-            },
-        })
-    </script>
+    <script src="fastclick.js"></script>
+    <script src="scroll.js"></script>
+    <script src="fixed-responsive-nav.js"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -138,6 +151,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+     <script src="script.js"></script>
 </body>
 
 </html>
